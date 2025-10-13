@@ -3,875 +3,288 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code with Serah - Where Code Meets Creativity</title>
-    <meta name="description" content="Code with Serah blends creativity and STEM to help learners build differently. 1,000+ inspired, 15+ projects, 6+ partners since 2023.">
+    <title>Code with Serah | STEM with a Twist</title>
+    <meta name="description" content="STEM, but different. Explore programs, impact, and stories empowering 1 000+ learners to build differently.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Floating shapes -->
-    <div class="floating-shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-        <div class="shape shape-4"></div>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">
-                    <img src="images/logo.png" alt="Code with Serah Logo" style="height: 80px; width: auto; max-width: 200px;">
+    <div class="page-shell">
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="nav-container">
+                <a href="#home" class="nav-logo" aria-label="Code with Serah home">
+                    <span>Code with Serah</span>
                 </a>
+                <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#programs" class="nav-link">Programs</a>
+                    <a href="#impact" class="nav-link">Impact</a>
+                    <a href="#pulse" class="nav-link">Pulse</a>
+                    <a href="#ambassadors" class="nav-link">Ambassadors</a>
+                    <a href="#join" class="nav-link nav-link-button">Join Us</a>
+                </div>
             </div>
-            <div class="nav-menu">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#programs" class="nav-link">Programs</a>
-                <a href="#impact" class="nav-link">Impact</a>
-                <a href="#pulse" class="nav-link">Pulse</a>
-                <a href="#ambassadors" class="nav-link">Ambassadors</a>
-                <a href="#join" class="nav-link">Join Us</a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Anniversary Banner -->
-    <div class="anniversary-banner">
-        <div class="anniversary-content">
-            Celebrating 1 Year — launched Oct 13, 2024
-        </div>
-    </div>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-badge fade-in-up">1,000+ learners • 15+ projects • 6+ partners • since 2023</div>
-                <h1 class="hero-title fade-in-up">
-                    We don't follow formulas — we rewrite them.
-                </h1>
-                <div class="hero-story fade-in-up">
-                    <p>
-                        Code with Serah exists at the intersection of creativity and STEM — where rules are challenged, and learning gets personal.
-                    </p>
-                    <p>
-                        With 1,000+ learners and creators, we're proving that innovation isn't about fitting in — it's about standing out. Because when curiosity meets courage, the future gets rewritten.
-                    </p>
+        <main>
+            <section id="home" class="hero" aria-labelledby="hero-title">
+                <div class="floating-shapes" aria-hidden="true">
+                    <div class="shape atom"></div>
+                    <div class="shape bracket"></div>
+                    <div class="shape orbit"></div>
+                    <div class="shape spark"></div>
                 </div>
-                <div class="hero-buttons fade-in-up">
-                    <a href="#programs" class="btn btn-primary magical-btn">
-                        <span>Build Differently</span>
-                        <i class="fas fa-sparkles"></i>
-                    </a>
-                    <a href="#impact" class="btn btn-secondary">
-                        <span>See Our Impact</span>
-                        <i class="fas fa-chart-line"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="hero-visual fade-in-right">
-                <div class="floating-card" aria-label="Code snippet: STEM with a twist">
-                    <div class="card-header">
-                        <div class="dots">
-                            <span></span><span></span><span></span>
-                        </div>
-                        <p class="handwritten">STEM, reimagined</p>
-                    </div>
-                    <div class="code-preview">
-                        <div class="code-line">const twist = "STEM, but different";</div>
-                        <div class="code-line">const impact = sparkInnovation(twist);</div>
-                        <div class="code-line">console.log("Future reprogrammed ⚡");</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Story Section -->
-    <section id="story" class="story">
-        <div class="container">
-            <div class="story-content">
-                <div class="story-text">
-                    <div class="story-header">
-                        <h2 class="handwritten">My Story</h2>
-                        <p class="story-tagline">From scared beginner to community builder</p>
-                    </div>
-                    <div class="story-timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h4>2020: The Beginning</h4>
-                                <p>I was working in retail, feeling stuck and wondering if there was more to life. A friend mentioned coding, and I laughed - \"That's not for people like me.\"</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h4>2021: First Hello World</h4>
-                                <p>After months of YouTube tutorials and feeling lost, I finally wrote my first program. It was just \"Hello World\" but I cried with joy. I knew I found my calling.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h4>2022: Landing My Dream Job</h4>
-                                <p>With the help of an amazing mentor, I built my portfolio and landed my first developer role. The imposter syndrome was real, but so was my determination.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h4>2023: Giving Back</h4>
-                                <p>I realized my journey could help others. Initiative Code was born from late-night conversations with friends who felt just as lost as I once did.</p>
-                            </div>
+                <div class="hero-inner">
+                    <div class="hero-content reveal">
+                        <p class="microline" role="text">Celebrating 1 Year · launched Oct 13, 2024</p>
+                        <h1 id="hero-title">We don't follow formulas — we rewrite them.</h1>
+                        <p class="hero-subcopy">
+                            Code with Serah exists at the intersection of creativity and STEM — where rules are challenged and learning gets personal.
+                            With 1&nbsp;000+ learners and creators, we are proving that innovation is not about fitting in — it is about standing out.
+                            When curiosity meets courage, the future gets rewritten.
+                        </p>
+                        <div class="hero-actions">
+                            <a class="btn btn-primary" href="#programs">Build Differently</a>
+                            <a class="btn btn-ghost" href="#impact">See Our Impact</a>
                         </div>
                     </div>
-                </div>
-                <div class="story-visual">
-                    <div class="polaroid-stack">
-                        <div class="polaroid polaroid-1">
-                            <div class="photo">📱</div>
-                            <p class="handwritten">First app deployed!</p>
-                        </div>
-                        <div class="polaroid polaroid-2">
-                            <div class="photo">👩‍💻</div>
-                            <p class="handwritten">Mentoring sessions</p>
-                        </div>
-                        <div class="polaroid polaroid-3">
-                            <div class="photo">🎉</div>
-                            <p class="handwritten">Community celebrations</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="vision" class="story">
-        <div class="container">
-            <div class="story-content">
-                <div class="story-text">
-                    <div class="story-header">
-                        <h2 class="handwritten">Vision</h2>
-                        <p class="story-tagline">A world where anyone, anywhere can transform their life through code.</p>
-                    </div>
-                    <div class="story-timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h4>Access for all</h4>
-                                <p>Low‑cost, low‑bandwidth, beginner‑friendly pathways into tech.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h4>Confidence over credentials</h4>
-                                <p>We celebrate curiosity, persistence and community—not gatekeeping.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h4>Learning to livelihoods</h4>
-                                <p>Projects, portfolios and mentorship that lead to real opportunities.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-dot"></div>
-                            <div class="timeline-content">
-                                <h4>Pay it forward</h4>
-                                <p>Graduates become mentors, multiplying impact across communities.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="story-visual">
-                    <div class="polaroid-stack">
-                        <div class="polaroid polaroid-1">
-                            <div class="photo">📱</div>
-                            <p class="handwritten">First app deployed!</p>
-                        </div>
-                        <div class="polaroid polaroid-2">
-                            <div class="photo">👩‍💻</div>
-                            <p class="handwritten">Mentoring sessions</p>
-                        </div>
-                        <div class="polaroid polaroid-3">
-                            <div class="photo">🎉</div>
-                            <p class="handwritten">Community celebrations</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Programs Section -->
-    <section id="programs" class="programs">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="handwritten">Our Programs</h2>
-                <p class="section-intro">Each program is designed with love, tested by our community, and refined through real experiences. No cookie-cutter approaches here!</p>
-            </div>
-            
-            <div class="programs-showcase">
-                <div class="program-highlight">
-                    <div class="program-badge">⭐ Most Popular</div>
-                    <div class="program-content">
-                        <div class="program-visual">
-                            <div class="laptop-mockup">
-                                <div class="screen">
-                                    <div class="browser-bar">
-                                        <div class="browser-dots"><span></span><span></span><span></span></div>
-                                    </div>
-                                    <div class="browser-content">
-                                        <div class="typing-demo">Building amazing things...</div>
-                                    </div>
+                    <div class="hero-visual reveal" aria-hidden="false">
+                        <div class="code-card" role="img" aria-label="Animated code snippet illustrating the Code with Serah mindset">
+                            <div class="code-card-header">
+                                <div class="code-dots" aria-hidden="true">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
                                 </div>
+                                <span class="code-title">session.js</span>
+                            </div>
+                            <div class="code-window">
+                                <pre><code class="code-typing" data-lines='["const twist = \"STEM, but different\";","const impact = sparkInnovation(twist);","console.log(\"Future reprogrammed\");"]'></code></pre>
                             </div>
                         </div>
-                        <div class="program-info">
-                            <h3>The Full-Stack Journey</h3>
-                            <p class="program-story">"I went from not knowing what HTML was to building full applications that real people use. This program doesn't just teach you to code - it transforms how you see yourself." - <em>Jessica, Graduate</em></p>
-                            <div class="program-details">
-                                <div class="detail-item">
-                                    <i class="fas fa-calendar"></i>
-                                    <span>16 weeks • Part-time friendly</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-users"></i>
-                                    <span>Max 12 students per cohort</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-money-bill-wave"></i>
-                                    <span>Income-based pricing available</span>
-                                </div>
+                    </div>
+                </div>
+                <div class="curve-divider" aria-hidden="true">
+                    <svg viewBox="0 0 1440 160" xmlns="http://www.w3.org/2000/svg"><path d="M0,160 C360,40 1080,40 1440,160 L1440,0 L0,0 Z"/></svg>
+                </div>
+            </section>
+
+            <section id="about" class="section about">
+                <div class="section-inner">
+                    <div class="about-text reveal">
+                        <h2>How It All Started</h2>
+                        <p>
+                            Three years ago, I was exactly where you might be — unsure if tech would ever make room for someone like me. I built Code with Serah to answer that question with a resounding yes, creating pathways that feel personal, human, and full of wonder.
+                        </p>
+                        <p>
+                            From one screen and a stubborn idea, we have grown into a movement powered by experimentation, mentorship, and heart-driven STEM journeys.
+                        </p>
+                    </div>
+                    <div class="about-visual reveal">
+                        <div class="about-card">
+                            <h3>Milestones</h3>
+                            <div class="milestone">
+                                <span class="year">2023</span>
+                                <p>First learners enrolled and first projects shipped from living rooms across the globe.</p>
                             </div>
-                            <a href="#" class="btn btn-primary magical-btn">
-                                <span>Apply Now</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="programs-grid">
-                    <div class="program-card glass-card">
-                        <div class="card-emoji">🤝</div>
-                        <h3>Code Buddies</h3>
-                        <p>Weekly virtual coffee chats where we solve problems together, celebrate wins, and support each other through the tough debugging days.</p>
-                        <div class="program-meta">
-                            <span class="meta-item">🗓️ Every Tuesday 7PM EST</span>
-                            <span class="meta-item">💝 Always Free</span>
-                        </div>
-                    </div>
-
-                    <div class="program-card glass-card">
-                        <div class="card-emoji">🌱</div>
-                        <h3>First Steps</h3>
-                        <p>Never touched code before? Perfect! These workshops are designed for complete beginners who want to dip their toes in the coding world.</p>
-                        <div class="program-meta">
-                            <span class="meta-item">⏰ 2-hour workshops</span>
-                            <span class="meta-item">🎯 Zero experience needed</span>
-                        </div>
-                    </div>
-
-                    <div class="program-card glass-card">
-                        <div class="card-emoji">🚀</div>
-                        <h3>Build & Ship</h3>
-                        <p>Got some coding skills? Let's build real projects that matter. From idea to deployment, we'll ship something amazing together.</p>
-                        <div class="program-meta">
-                            <span class="meta-item">📱 Build real apps</span>
-                            <span class="meta-item">🌟 Portfolio-worthy projects</span>
-                        </div>
-                    </div>
-
-                    <div class="program-card glass-card">
-                        <div class="card-emoji">👩‍🏫</div>
-                        <h3>Mentor Magic</h3>
-                        <p>Get paired with someone who's walked this path before. Not just technical help - career guidance, confidence building, and real friendship.</p>
-                        <div class="program-meta">
-                            <span class="meta-item">🎯 1-on-1 guidance</span>
-                            <span class="meta-item">💬 Weekly check-ins</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="goals" class="programs">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="handwritten">Our Goals</h2>
-                <p class="section-intro">Clear, measurable goals that guide what we build in 2025.</p>
-            </div>
-            
-            <div class="programs-showcase">
-                <div class="program-highlight">
-                    <div class="program-badge">🎯 2025 Focus</div>
-                    <div class="program-content">
-                        <div class="program-visual">
-                            <div class="laptop-mockup">
-                                <div class="screen">
-                                    <div class="browser-bar">
-                                        <div class="browser-dots"><span></span><span></span><span></span></div>
-                                    </div>
-                                    <div class="browser-content">
-                                        <div class="typing-demo">Building amazing things...</div>
-                                    </div>
-                                </div>
+                            <div class="milestone">
+                                <span class="year">2024</span>
+                                <p>Signature labs launched with mentors from design, hardware, and software fields.</p>
+                            </div>
+                            <div class="milestone">
+                                <span class="year">2025</span>
+                                <p>Scaling immersive sprints and building pathways from curiosity to careers.</p>
                             </div>
                         </div>
-                        <div class="program-info">
-                            <h3>Goal 1 — Accessible Learning at Scale</h3>
-                            <p class="program-story">Open, inclusive pathways with scholarships, offline‑friendly content and community‑led support.</p>
-                            <div class="program-details">
-                                <div class="detail-item">
-                                    <i class="fas fa-calendar"></i>
-                                    <span>Quarterly cohorts</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-users"></i>
-                                    <span>500+ learners supported</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-money-bill-wave"></i>
-                                    <span>50 scholarships per cohort</span>
-                                </div>
-                            </div>
-                            <a href="#" class="btn btn-primary magical-btn">
-                                <span>See the roadmap</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="programs-grid">
-                    <div class="program-card glass-card">
-                        <div class="card-emoji">🤝</div>
-                        <h3>Goal 2 — Strong Communities</h3>
-                        <p>Weekly peer support and accountability circles that make learning stick.</p>
-                        <div class="program-meta">
-                            <span class="meta-item">🗓️ Every Tuesday 7PM local</span>
-                            <span class="meta-item">💝 Always Free</span>
-                        </div>
+            <section id="programs" class="section programs">
+                <div class="section-inner">
+                    <div class="section-header reveal">
+                        <h2>Programs that bend the rules</h2>
+                        <p>From intro labs to deep-dive fellowships, every experience is designed to blend technical mastery with fearless creativity.</p>
                     </div>
-
-                    <div class="program-card glass-card">
-                        <div class="card-emoji">🌱</div>
-                        <h3>Goal 3 — Beginner Onramps</h3>
-                        <p>No‑pressure workshops for absolute beginners that build momentum fast.</p>
-                        <div class="program-meta">
-                            <span class="meta-item">⏰ 2-hour workshops</span>
-                            <span class="meta-item">🎯 Zero experience needed</span>
-                        </div>
-                    </div>
-
-                    <div class="program-card glass-card">
-                        <div class="card-emoji">🚀</div>
-                        <h3>Goal 4 — Build & Ship</h3>
-                        <p>Project‑based sprints ending in real deployments and public demos.</p>
-                        <div class="program-meta">
-                            <span class="meta-item">📱 Build real apps</span>
-                            <span class="meta-item">🌟 Portfolio‑worthy projects</span>
-                        </div>
-                    </div>
-
-                    <div class="program-card glass-card">
-                        <div class="card-emoji">👩‍🏫</div>
-                        <h3>Goal 5 — Mentorship</h3>
-                        <p>Match learners with mentors for guidance into roles and opportunities.</p>
-                        <div class="program-meta">
-                            <span class="meta-item">🎯 1-on-1 guidance</span>
-                            <span class="meta-item">💬 Weekly check-ins</span>
-                        </div>
+                    <div class="program-grid">
+                        <article class="program-card reveal">
+                            <div class="program-icon" aria-hidden="true"><i class="fas fa-lightbulb"></i></div>
+                            <h3>Ignition Lab</h3>
+                            <p>Four-week primer for total beginners who want to grasp fundamentals and build a real prototype fast.</p>
+                            <a class="program-link" href="#">Learn More</a>
+                        </article>
+                        <article class="program-card reveal">
+                            <div class="program-icon" aria-hidden="true"><i class="fas fa-code"></i></div>
+                            <h3>Build Studio</h3>
+                            <p>Project-based accelerator pairing learners with designers and engineers to ship polished, human-first apps.</p>
+                            <a class="program-link" href="#">Learn More</a>
+                        </article>
+                        <article class="program-card reveal">
+                            <div class="program-icon" aria-hidden="true"><i class="fas fa-microscope"></i></div>
+                            <h3>Research Sprints</h3>
+                            <p>Six-week explorations merging science, art, and code to prototype experimental, purpose-driven ideas.</p>
+                            <a class="program-link" href="#">Learn More</a>
+                        </article>
+                        <article class="program-card reveal">
+                            <div class="program-icon" aria-hidden="true"><i class="fas fa-satellite"></i></div>
+                            <h3>Edge Fellowship</h3>
+                            <p>Advanced mentorship track for builders pushing emerging tech, from AI tooling to hardware hybrids.</p>
+                            <a class="program-link" href="#">Learn More</a>
+                        </article>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Community Ambassadors -->
-    <section id="ambassadors" class="ambassadors">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="handwritten">Our Amazing Ambassadors</h2>
-                <p>These incredible humans help make our community the warm, welcoming space it is. They started as students and now they're changing lives too!</p>
-            </div>
-            
-            <div class="ambassadors-grid">
-                <div class="ambassador-card">
-                    <div class="ambassador-photo">
-                        <div class="photo-frame">
-                            <span class="emoji-avatar">👩🏽‍💻</span>
-                            <div class="photo-decoration"></div>
+            <section id="impact" class="section impact">
+                <div class="section-inner">
+                    <div class="section-header reveal">
+                        <h2>Our Impact in Numbers</h2>
+                        <p>Growth you can feel — powered by curious minds rewriting what STEM can look like.</p>
+                    </div>
+                    <div class="impact-stats">
+                        <div class="stat-card reveal" data-target="1000" data-suffix="+">
+                            <span class="stat-number">0</span>
+                            <p>Learners</p>
+                        </div>
+                        <div class="stat-card reveal" data-target="15" data-suffix="+">
+                            <span class="stat-number">0</span>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat-card reveal" data-target="6" data-suffix="+">
+                            <span class="stat-number">0</span>
+                            <p>Partners</p>
+                        </div>
+                        <div class="stat-card reveal" data-target="12" data-suffix="+">
+                            <span class="stat-number">0</span>
+                            <p>Events</p>
                         </div>
                     </div>
-                    <div class="ambassador-info">
-                        <h3>Maria Elena</h3>
-                        <p class="role">Lead Community Ambassador</p>
-                        <p class="bio">"I went from being terrified of the command line to leading workshops for 100+ developers. Now I help others find their confidence in code!"</p>
-                        <div class="ambassador-stats">
-                            <span>🎓 Mentored 50+ students</span>
-                            <span>🏆 Now at Google</span>
-                        </div>
+                    <div class="impact-gallery" aria-hidden="false">
+                        <div class="impact-photo reveal" role="img" aria-label="Group of learners collaborating during a Code with Serah lab session"></div>
+                        <div class="impact-photo reveal" role="img" aria-label="Hands-on workshop with laptops, sketches, and neon lighting"></div>
+                        <div class="impact-photo reveal" role="img" aria-label="Project showcase with interactive demos on screen"></div>
                     </div>
                 </div>
+            </section>
 
-                <div class="ambassador-card">
-                    <div class="ambassador-photo">
-                        <div class="photo-frame">
-                            <span class="emoji-avatar">👨🏿‍💻</span>
-                            <div class="photo-decoration"></div>
+            <section id="pulse" class="section pulse">
+                <div class="section-inner">
+                    <div class="section-header reveal">
+                        <h2>The Pulse</h2>
+                        <p>Ideas, insights, and the unexpected twists in STEM — curated for builders who like to experiment.</p>
+                    </div>
+                    <form class="newsletter-form reveal" aria-label="Newsletter subscription">
+                        <div class="newsletter-text">
+                            <h3>Stay in the loop</h3>
+                            <p>Get stories, opportunities, and creative STEM drops straight to your inbox.</p>
                         </div>
-                    </div>
-                    <div class="ambassador-info">
-                        <h3>James Thompson</h3>
-                        <p class="role">Career Transition Specialist</p>
-                        <p class="bio">"Former teacher turned full-stack developer. I love helping career changers navigate the beautiful chaos of learning to code."</p>
-                        <div class="ambassador-stats">
-                            <span>🔄 Career changer success</span>
-                            <span>💼 95% placement rate</span>
+                        <div class="newsletter-fields">
+                            <label class="sr-only" for="newsletter-email">Email</label>
+                            <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
                         </div>
-                    </div>
-                </div>
-
-                <div class="ambassador-card">
-                    <div class="ambassador-photo">
-                        <div class="photo-frame">
-                            <span class="emoji-avatar">👩🏻‍💻</span>
-                            <div class="photo-decoration"></div>
-                        </div>
-                    </div>
-                    <div class="ambassador-info">
-                        <h3>Alex Chen</h3>
-                        <p class="role">Youth Program Coordinator</p>
-                        <p class="bio">"I started coding at 14 and now I'm 22, working at a startup I love. I'm passionate about getting young people excited about tech!"</p>
-                        <div class="ambassador-stats">
-                            <span>🎮 Makes coding fun</span>
-                            <span>🌟 Youngest team member</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="become-ambassador">
-                <div class="cta-card">
-                    <h3 class="handwritten">Want to become an ambassador?</h3>
-                    <p>Share your journey, help others, and become part of something bigger than yourself.</p>
-                    <a href="#" class="btn btn-outline">Apply to be an Ambassador</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Real Stories Section -->
-    <section class="real-stories">
-        <div class="container">
-            <div class="stories-header">
-                <h2 class="handwritten">Real Stories, Real People</h2>
-                <p>These aren't made-up testimonials. These are actual messages from our community (shared with permission, of course!)</p>
-            </div>
-            
-            <div class="stories-masonry">
-                <div class="story-card message-card">
-                    <div class="message-header">
-                        <img class="avatar" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%239D4EDD'/%3E%3Ctext x='50' y='55' font-family='Arial' font-size='40' fill='white' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E" alt="Sarah">
-                        <div>
-                            <h4>Sarah M.</h4>
-                            <span class="timestamp">2 months ago</span>
-                        </div>
-                    </div>
-                    <div class="message-content">
-                        <p>"GUYS I JUST GOT THE JOB!!! 🎉 Six months ago I couldn't even spell JavaScript and now I'm a junior developer at a company I actually want to work for. This community literally changed my entire life trajectory. Serah, if you're reading this, THANK YOU for believing in me before I believed in myself."</p>
-                        <div class="reactions">
-                            <span>❤️ 127</span>
-                            <span>🎉 89</span>
-                            <span>👏 156</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="story-card photo-card">
-                    <div class="photo-placeholder">
-                        <span class="photo-emoji">📸</span>
-                        <p class="handwritten">Last week's graduation!</p>
-                    </div>
-                    <div class="photo-caption">
-                        <p>"Look at these absolute legends! From our latest cohort - 12 amazing humans who just deployed their final projects. The pride in their faces says everything."</p>
-                        <span class="photo-date">- Posted by Serah, 3 days ago</span>
-                    </div>
-                </div>
-
-                <div class="story-card quote-card">
-                    <div class="big-quote">"</div>
-                    <p>I'm a single mom working two jobs. I thought coding was for young people with computer science degrees. This community showed me that code is for anyone willing to try, fail, and try again.</p>
-                    <div class="quote-author">
-                        <h4>- Denise K.</h4>
-                        <span>Now a freelance developer</span>
-                    </div>
-                </div>
-
-                <div class="story-card update-card">
-                    <div class="update-header">
-                        <span class="update-type">🔥 Community Update</span>
-                    </div>
-                    <h4>This month's wins:</h4>
-                    <ul>
-                        <li>✨ 23 new job offers received</li>
-                        <li>🚀 8 side projects launched</li>
-                        <li>📱 Our first mobile app hit the app store</li>
-                        <li>💰 $150k total salary increases across grads</li>
-                    </ul>
-                    <p class="handwritten">We're not just learning code, we're changing lives! 💜</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section class="newsletter">
-        <div class="container">
-            <div class="newsletter-content">
-                <div class="newsletter-visual">
-                    <div class="email-preview">
-                        <div class="email-header">
-                            <h4 class="handwritten">Weekly Dose of Inspiration</h4>
-                            <span class="email-time">Every Sunday ☕</span>
-                        </div>
-                        <div class="email-body">
-                            <p>Hey lovely human! 👋</p>
-                            <p>This week in our community:</p>
-                            <ul>
-                                <li>💫 Featured project spotlight</li>
-                                <li>🎯 Coding challenge of the week</li>
-                                <li>💼 Job opportunities</li>
-                                <li>🌈 Community celebrations</li>
-                            </ul>
-                            <p class="handwritten">+ A personal note from me!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="newsletter-signup">
-                    <h2>Join Our Sunday Stories</h2>
-                    <p>Every Sunday, I send out a personal email with the week's highlights, job opportunities, and a little dose of motivation. No spam, just real talk from one coder to another.</p>
-                    
-                    <form class="newsletter-form">
-                        <div class="form-group">
-                            <input type="email" id="newsletter-email" placeholder="your-email@example.com" required>
-                            <label for="newsletter-email">Email Address</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="first-name" placeholder="What should I call you?">
-                            <label for="first-name">First Name</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary newsletter-btn">
-                            <span>Send Me Sunday Stories!</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
                     </form>
-                    
-                    <p class="newsletter-note">📧 <strong>2,847 amazing humans</strong> already get these emails. Join them!</p>
+                    <div class="pulse-grid">
+                        <article class="pulse-card reveal">
+                            <div class="pulse-image" aria-hidden="true"></div>
+                            <div class="pulse-content">
+                                <h3>Designing labs that feel like playgrounds</h3>
+                                <p>We reimagined how labs operate by blending improvisation, art direction, and technical rigor.</p>
+                                <a href="#" class="pulse-link">Read Story</a>
+                            </div>
+                        </article>
+                        <article class="pulse-card reveal">
+                            <div class="pulse-image" aria-hidden="true"></div>
+                            <div class="pulse-content">
+                                <h3>Hardware, poetry, and curious prototypes</h3>
+                                <p>Inside the latest research sprint where teams merged analog devices with machine learning.</p>
+                                <a href="#" class="pulse-link">Read Story</a>
+                            </div>
+                        </article>
+                        <article class="pulse-card reveal">
+                            <div class="pulse-image" aria-hidden="true"></div>
+                            <div class="pulse-content">
+                                <h3>Mentorship that scales courage</h3>
+                                <p>How mentors coach for bravery and technical clarity, even when the roadmap is unknown.</p>
+                                <a href="#" class="pulse-link">Read Story</a>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Blog Preview Section -->
-    <section id="blog" class="blog-preview">
-        <div class="container">
-            <div class="blog-header">
-                <h2 class="handwritten">From the Blog</h2>
-                <p>Monthly musings, coding tips, and behind-the-scenes stories from our community</p>
-            </div>
-            
-            <div class="blog-grid">
-                <article class="blog-post featured">
-                    <div class="post-header">
-                        <span class="post-category handwritten">Personal Story</span>
-                        <span class="post-date">December 15, 2024</span>
+            <section id="ambassadors" class="section ambassadors">
+                <div class="section-inner">
+                    <div class="section-header reveal">
+                        <h2>Real people, real change</h2>
+                        <p>Meet the minds shaping Code with Serah from the inside out.</p>
                     </div>
-                    <div class="post-image">
-                        <div class="blog-photo">
-                            <span class="blog-emoji">☕</span>
-                            <div class="image-overlay">
-                                <span class="read-time">5 min read</span>
-                            </div>
-                        </div>
+                    <div class="ambassador-grid">
+                        <article class="ambassador-card reveal">
+                            <div class="ambassador-avatar" aria-hidden="true">A</div>
+                            <h3>Amara</h3>
+                            <p>"Code with Serah is where I learned to design systems that feel like art."</p>
+                        </article>
+                        <article class="ambassador-card reveal">
+                            <div class="ambassador-avatar" aria-hidden="true">L</div>
+                            <h3>Li</h3>
+                            <p>"The labs gave me courage to prototype faster and share wilder ideas."</p>
+                        </article>
+                        <article class="ambassador-card reveal">
+                            <div class="ambassador-avatar" aria-hidden="true">M</div>
+                            <h3>Malik</h3>
+                            <p>"Collaboration here means learning the science, the storytelling, and the why."</p>
+                        </article>
+                        <article class="ambassador-card reveal">
+                            <div class="ambassador-avatar" aria-hidden="true">Z</div>
+                            <h3>Zahra</h3>
+                            <p>"We build differently, because we are encouraged to be both bold and precise."</p>
+                        </article>
                     </div>
-                    <div class="post-content">
-                        <h3>Why I Almost Quit Coding (And What Stopped Me)</h3>
-                        <p>Two weeks into my coding journey, I was ready to give up. The tutorials made no sense, my code never worked, and I felt like the dumbest person alive. Here's what happened next...</p>
-                        <a href="#" class="read-more">Read the full story →</a>
-                    </div>
-                </article>
+                </div>
+            </section>
 
-                <article class="blog-post">
-                    <div class="post-header">
-                        <span class="post-category handwritten">Community Spotlight</span>
-                        <span class="post-date">November 28, 2024</span>
+            <section id="join" class="section join">
+                <div class="section-inner reveal">
+                    <h2>You do not need experience. You just need curiosity.</h2>
+                    <p>Join Code with Serah and start your STEM story today.</p>
+                    <div class="join-actions">
+                        <a href="#" class="btn btn-primary confetti-trigger">Apply Now</a>
+                        <a href="#" class="btn btn-ghost confetti-trigger">Partner With Us</a>
                     </div>
-                    <div class="post-content">
-                        <h3>Meet the Mom Who Built an App While Homeschooling</h3>
-                        <p>Jessica juggles three kids, homeschooling, and just launched her first mobile app. Her story will inspire you...</p>
-                        <a href="#" class="read-more">Read more →</a>
-                    </div>
-                </article>
+                </div>
+            </section>
+        </main>
 
-                <article class="blog-post">
-                    <div class="post-header">
-                        <span class="post-category handwritten">Coding Tips</span>
-                        <span class="post-date">November 14, 2024</span>
-                    </div>
-                    <div class="post-content">
-                        <h3>5 Debugging Tricks That'll Save Your Sanity</h3>
-                        <p>These are the debugging strategies I wish someone had taught me when I started. They'll save you hours of frustration...</p>
-                        <a href="#" class="read-more">Read more →</a>
-                    </div>
-                </article>
-            </div>
-            
-            <div class="blog-cta">
-                <a href="#" class="btn btn-secondary">
-                    <span>Read All Posts</span>
-                    <i class="fas fa-book-open"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Impact Stories -->
-    <section class="impact-stories">
-        <div class="container">
-            <div class="impact-header">
-                <h2 class="handwritten">The Ripple Effect</h2>
-                <p>When you change one person's life through code, they go on to change others. Here's the beautiful chain reaction our community creates...</p>
-            </div>
-            
-            <div class="impact-flow">
-                <div class="impact-step">
-                    <div class="step-visual">
-                        <span class="step-emoji">🌱</span>
-                        <div class="step-connector"></div>
-                    </div>
-                    <div class="step-content">
-                        <h4>Someone starts their journey</h4>
-                        <p>Scared, excited, curious about what's possible</p>
-                    </div>
-                </div>
-                
-                <div class="impact-step">
-                    <div class="step-visual">
-                        <span class="step-emoji">💪</span>
-                        <div class="step-connector"></div>
-                    </div>
-                    <div class="step-content">
-                        <h4>They build confidence & skills</h4>
-                        <p>With support, mentorship, and lots of practice</p>
-                    </div>
-                </div>
-                
-                <div class="impact-step">
-                    <div class="step-visual">
-                        <span class="step-emoji">🚀</span>
-                        <div class="step-connector"></div>
-                    </div>
-                    <div class="step-content">
-                        <h4>They land amazing opportunities</h4>
-                        <p>New careers, side projects, entrepreneurship</p>
-                    </div>
-                </div>
-                
-                <div class="impact-step">
-                    <div class="step-visual">
-                        <span class="step-emoji">🤝</span>
-                    </div>
-                    <div class="step-content">
-                        <h4>They lift others up</h4>
-                        <p>Becoming mentors, ambassadors, and community leaders</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="impact-stats">
-                <div class="stat-card">
-                    <h3 class="stat-number" data-target="847">0</h3>
-                    <p>Lives changed through our programs</p>
-                </div>
-                <div class="stat-card">
-                    <h3 class="stat-number" data-target="156">0</h3>
-                    <p>People now working in tech</p>
-                </div>
-                <div class="stat-card">
-                    <h3 class="stat-number" data-target="23">0</h3>
-                    <p>Startups launched by our community</p>
-                </div>
-                <div class="stat-card">
-                    <h3 class="stat-number" data-target="78">0</h3>
-                    <p>Now mentoring others</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Join Us Section -->
-    <section id="join" class="join-us">
-        <div class="container">
-            <div class="join-content">
-                <div class="join-text">
-                    <h2 class="handwritten">Ready to Start Your Story?</h2>
-                    <p class="join-intro">I know taking the first step can feel scary. I've been there. But I promise you this - our community will catch you, support you, and celebrate every small win along the way.</p>
-                    
-                    <div class="join-options">
-                        <div class="join-option">
-                            <div class="option-icon">
-                                <i class="fas fa-coffee"></i>
-                            </div>
-                            <div class="option-content">
-                                <h4>Not sure where to start?</h4>
-                                <p>Book a free 30-min coffee chat with me. We'll talk about your goals, fears, and find the perfect path for you.</p>
-                                <a href="#" class="option-link">Schedule a chat →</a>
-                            </div>
-                        </div>
-                        
-                        <div class="join-option">
-                            <div class="option-icon">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <div class="option-content">
-                                <h4>Join our Discord</h4>
-                                <p>Hang out with 500+ friendly developers. Ask questions, share wins, and get support 24/7.</p>
-                                <a href="#" class="option-link">Join Discord →</a>
-                            </div>
-                        </div>
-                        
-                        <div class="join-option">
-                            <div class="option-icon">
-                                <i class="fas fa-rocket"></i>
-                            </div>
-                            <div class="option-content">
-                                <h4>Ready to dive in?</h4>
-                                <p>Apply for our next cohort. We review applications with heart, not just qualifications.</p>
-                                <a href="#" class="option-link">Apply now →</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="join-visual">
-                    <div class="community-preview">
-                        <div class="preview-header">
-                            <h4 class="handwritten">Live from our Discord</h4>
-                        </div>
-                        <div class="preview-messages">
-                            <div class="preview-message">
-                                <span class="user">Maya_Codes:</span>
-                                <span>Just pushed my first feature to production! 🚀</span>
-                            </div>
-                            <div class="preview-message">
-                                <span class="user">Serah:</span>
-                                <span>YESSS! So proud of you! 🎉</span>
-                            </div>
-                            <div class="preview-message">
-                                <span class="user">CodeNewbie_Jake:</span>
-                                <span>Can someone help with this CSS issue?</span>
-                            </div>
-                            <div class="preview-message">
-                                <span class="user">Alex_Dev:</span>
-                                <span>On it! Sharing my screen in 5 min</span>
-                            </div>
-                            <div class="typing-indicator">
-                                <span class="user">TechMentor_Lisa:</span>
-                                <span class="typing">typing...</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-main">
+        <footer class="site-footer">
+            <div class="footer-inner">
                 <div class="footer-brand">
-                    <h3 class="handwritten">Initiative Code</h3>
-                    <span class="tagline">with Serah 💜</span>
-                    <p>Building a more inclusive tech world, one awesome human at a time.</p>
-                    <div class="footer-social">
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    </div>
+                    <span class="footer-logo">Code with Serah</span>
+                    <p>Made with care by Serah Rashidi.</p>
                 </div>
-                
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Programs</h4>
-                        <a href="#">Full-Stack Journey</a>
-                        <a href="#">Code Buddies</a>
-                        <a href="#">First Steps Workshops</a>
-                        <a href="#">Mentor Magic</a>
-                        <a href="#">Build & Ship</a>
-                    </div>
-                    
-                    <div class="footer-column">
-                        <h4>Community</h4>
-                        <a href="#">Discord Server</a>
-                        <a href="#">Ambassador Program</a>
-                        <a href="#">Alumni Network</a>
-                        <a href="#">Success Stories</a>
-                        <a href="#">Code of Conduct</a>
-                    </div>
-                    
-                    <div class="footer-column">
-                        <h4>Resources</h4>
-                        <a href="#">Monthly Blog</a>
-                        <a href="#">Free Coding Challenges</a>
-                        <a href="#">Career Resources</a>
-                        <a href="#">Learning Roadmaps</a>
-                        <a href="#">Scholarship Info</a>
-                    </div>
-                    
-                    <div class="footer-column">
-                        <h4>Support</h4>
-                        <a href="#">Get Help</a>
-                        <a href="#">Technical Support</a>
-                        <a href="#">Mental Health Resources</a>
-                        <a href="#">Financial Aid</a>
-                        <a href="#">Contact Serah</a>
-                    </div>
+                <div class="footer-links" aria-label="Social links">
+                    <a href="https://www.linkedin.com" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com" aria-label="Instagram">
+                        <i class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com" aria-label="GitHub">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
                 </div>
+                <p class="footer-meta">© 2025 Code with Serah</p>
             </div>
-            
-            <div class="footer-bottom">
-                <div class="footer-legal">
-                    <p>&copy; 2024 Initiative Code with Serah. Made with 💜 for our amazing community.</p>
-                    <div class="legal-links">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
-                        <a href="#">Accessibility</a>
-                    </div>
-                </div>
-                <div class="footer-message">
-                    <p class="handwritten">"Every expert was once a beginner. Every beginner was once a dreamer. Keep dreaming, keep coding!" - Serah ✨</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/script.js"></script>
+        </footer>
+    </div>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
