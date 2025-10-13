@@ -843,12 +843,14 @@ p {
         justify-content: center;
     }
     
-    .anniversary-badge {
+    .anniversary-banner {
+        top: 68px;
+        padding: var(--space-1) 0;
+    }
+    
+    .anniversary-content {
         font-size: var(--text-xs);
-        padding: var(--space-1) var(--space-3);
-        text-align: center;
-        word-break: break-word;
-        line-height: 1.4;
+        padding: 0 var(--space-2);
     }
 }
 
@@ -1022,7 +1024,7 @@ p {
 /* Enhanced Hero Section */
 .hero {
     background: var(--gradient-warm);
-    padding: calc(100px + var(--space-16)) 0 var(--space-24);
+    padding: calc(130px + var(--space-16)) 0 var(--space-24);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -1067,18 +1069,27 @@ p {
     animation: gentle-bounce 2s infinite;
 }
 
-.anniversary-badge {
-    display: inline-block;
+/* Anniversary Banner */
+.anniversary-banner {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
     background: linear-gradient(135deg, var(--pastel-yellow) 0%, var(--pastel-yellow-light) 100%);
-    color: var(--text-primary);
-    padding: var(--space-2) var(--space-4);
-    border-radius: var(--radius-2xl);
+    border-bottom: 1px solid var(--pastel-yellow-dark);
+    z-index: 999;
+    padding: var(--space-2) 0;
+    box-shadow: var(--shadow-soft);
+}
+
+.anniversary-content {
+    text-align: center;
     font-size: var(--text-sm);
     font-weight: 600;
-    margin-bottom: var(--space-3);
-    box-shadow: var(--shadow-soft);
-    border: 1px solid var(--pastel-yellow-dark);
-    text-align: center;
+    color: var(--text-primary);
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 var(--space-4);
 }
 
 @keyframes gentle-bounce {
