@@ -833,12 +833,22 @@ p {
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+        gap: var(--space-4);
     }
     
     .btn {
-        padding: var(--spacing-sm) var(--spacing-md);
+        padding: var(--space-3) var(--space-5);
         width: 100%;
-        max-width: 300px;
+        max-width: 280px;
+        justify-content: center;
+    }
+    
+    .anniversary-badge {
+        font-size: var(--text-xs);
+        padding: var(--space-1) var(--space-3);
+        text-align: center;
+        word-break: break-word;
+        line-height: 1.4;
     }
 }
 
@@ -1055,6 +1065,20 @@ p {
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     animation: gentle-bounce 2s infinite;
+}
+
+.anniversary-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--pastel-yellow) 0%, var(--pastel-yellow-light) 100%);
+    color: var(--text-primary);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-2xl);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+    box-shadow: var(--shadow-soft);
+    border: 1px solid var(--pastel-yellow-dark);
+    text-align: center;
 }
 
 @keyframes gentle-bounce {
