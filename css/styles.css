@@ -4,18 +4,23 @@
    ===================================================== */
 
 :root {
-    /* Clean Color Palette - Purple, White, Yellow Only */
+    /* Professional Color Palette */
     --serah-purple: #7B2CBF;
     --serah-purple-dark: #5A189A;
+    --serah-purple-light: #9D4EDD;
     --yellow: #FFD700;
+    --yellow-light: #FFF4CC;
     --white: #FFFFFF;
-    --off-white: #FEFEFE;
+    --off-white: #FAFAFA;
+    --gray-50: #F8F9FA;
+    --gray-100: #F1F3F4;
+    --gray-200: #E8EAED;
     
-    /* Text Colors - Clean */
-    --text-primary: #2D1B4E;
-    --text-secondary: #4A4A4A;
-    --text-muted: #666666;
-    --text-light: #999999;
+    /* Text Colors - Professional */
+    --text-primary: #1A1A1A;
+    --text-secondary: #666666;
+    --text-muted: #8E8E93;
+    --text-light: #AFAFAF;
     
     /* Typography - Playful yet Professional */
     --font-primary: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -92,7 +97,7 @@ body {
     font-weight: 400;
     line-height: 1.7;
     color: var(--text-primary);
-    background: var(--white);
+    background: var(--gray-50);
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -350,9 +355,18 @@ p {
     50% { opacity: 1; }
 }
 
-/* Programs Section */
+/* Sections */
+.story {
+    padding: var(--space-24) 0;
+    background: var(--white);
+}
+
+.story:nth-of-type(even) {
+    background: var(--gray-50);
+}
+
 .programs {
-    padding: var(--spacing-2xl) 0;
+    padding: var(--space-24) 0;
     background: var(--white);
 }
 
@@ -919,12 +933,11 @@ p {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: var(--white);
     z-index: 1000;
     padding: var(--space-4) 0;
     transition: all 0.3s var(--ease-gentle);
-    border-bottom: 1px solid rgba(123, 44, 191, 0.2);
+    border-bottom: 1px solid var(--gray-200);
     box-shadow: var(--shadow-soft);
 }
 
@@ -1012,11 +1025,10 @@ p {
 .hero {
     background: var(--white);
     padding: calc(130px + var(--space-16)) 0 var(--space-24);
-    min-height: 100vh;
+    min-height: calc(100vh - 130px);
     display: flex;
     align-items: center;
     position: relative;
-    overflow: hidden;
 }
 
 
@@ -1034,16 +1046,14 @@ p {
 
 .hero-badge {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.8);
+    background: var(--gray-100);
     color: var(--serah-purple);
-    padding: var(--space-2) var(--space-4);
+    padding: var(--space-3) var(--space-5);
     border-radius: var(--radius-3xl);
     font-size: var(--text-sm);
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: var(--space-6);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    animation: gentle-bounce 2s infinite;
+    border: 1px solid var(--gray-200);
 }
 
 /* Anniversary Banner */
@@ -1052,8 +1062,8 @@ p {
     top: 80px;
     left: 0;
     right: 0;
-    background: var(--yellow);
-    border-bottom: 1px solid var(--serah-purple-dark);
+    background: var(--yellow-light);
+    border-bottom: 1px solid var(--yellow);
     z-index: 999;
     padding: var(--space-2) 0;
     box-shadow: var(--shadow-soft);
@@ -1120,7 +1130,7 @@ p {
 }
 
 .btn-primary {
-    background: var(--serah-purple);
+    background: linear-gradient(135deg, var(--serah-purple) 0%, var(--serah-purple-dark) 100%);
     color: white;
     box-shadow: var(--shadow-medium);
     border: 2px solid transparent;
@@ -1128,6 +1138,7 @@ p {
 
 .btn-primary:hover {
     transform: translateY(-3px);
+    background: linear-gradient(135deg, var(--serah-purple-dark) 0%, var(--serah-purple) 100%);
     box-shadow: var(--shadow-large);
 }
 
